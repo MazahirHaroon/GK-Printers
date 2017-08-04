@@ -25,12 +25,10 @@ class Mainctrl extends CI_Controller {
 	}
 	public function Sendmail() {
 	 	$this->load->model('Init');
-		//$cname =  $this->input->post('cname');
-		//$to =  $this->input->post('cemail');
-		//$events =  $this->input->post('events');
-		//$comments =  $this->input->post('comments');
-		$cname = "mazahir";
-		$to ="mazahirharoon@gmail.com";
+		$cname =  $this->input->post('cname');
+		$to =  $this->input->post('cemail');
+		$events =  $this->input->post('events');
+		$comments =  $this->input->post('comments');
 		log_message('info','$name '.$cname);
 		$toadmin = "mazahirharoon@gmail.com";
 		$toadmin1 = "mazahirharoon@gmail.com";

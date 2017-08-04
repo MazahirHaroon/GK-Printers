@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$base_url= 'http://www.cyphotec.com/projects/GKPrinters';
+$base_url= 'http://localhost/GKPrinters/';
 $config['base_url']	= $base_url;
 $config['css'] = $base_url.'/assets/css';
 $config['js'] = $base_url.'/assets/js';
