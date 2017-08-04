@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatile" content="IE=Edge">

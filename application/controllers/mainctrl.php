@@ -1,6 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Mainctrl extends CI_Controller {
 
 	/**
@@ -25,10 +25,12 @@ class Mainctrl extends CI_Controller {
 	}
 	public function Sendmail() {
 	 	$this->load->model('Init');
-		$cname =  $this->input->post('cname');
-		$to =  $this->input->post('cemail');
-		$events =  $this->input->post('events');
-		$comments =  $this->input->post('comments');
+		//$cname =  $this->input->post('cname');
+		//$to =  $this->input->post('cemail');
+		//$events =  $this->input->post('events');
+		//$comments =  $this->input->post('comments');
+		$cname = "mazahir";
+		$to ="mazahirharoon@gmail.com";
 		log_message('info','$name '.$cname);
 		$toadmin = "mazahirharoon@gmail.com";
 		$toadmin1 = "mazahirharoon@gmail.com";
@@ -48,7 +50,7 @@ class Mainctrl extends CI_Controller {
 		$body.= "Sincerely,";
 		$body.= "<br>";
 		$body.= "<br>";
-		$body.= "<strong>The BYM Team</strong>";
+		$body.= "<strong>GK Printers</strong>";
 		mail($to,$subject,$body,$headers,"-f$from");
 
 		// mail($toadmin,$subjectadmin,$bodyadmin,$headersadmin,"-f$from");
