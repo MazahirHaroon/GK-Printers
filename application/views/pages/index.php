@@ -17,8 +17,8 @@
         $('#sendmail').on('click', function (e) {
         //   document.getElementById("error").classList.add("hiddendiv");
         //   document.getElementById("success").classList.add("hiddendiv");	
-          e.preventDefault();
-          console.log("insidel");
+        e.preventDefault();
+        console.log("insidel");
 		//   var path="<?=$path?>";
 		//   var url = path+"/Sendmail";
         //   $.ajax({
@@ -28,9 +28,11 @@
         //     success: contactsend,
         //   });
 		<?php
-		$cname = "mazahir";
-		$to ="mazahirharoon@gmail.com";
-		log_message('info','$name '.$cname);
+		$cname =  $this->input->post('cname');
+		$to =  $this->input->post('cemail');
+		$events =  $this->input->post('events');
+		$comments =  $this->input->post('comments');
+		log_message('info','$nacsdsdme '.$cname);
 		$toadmin = "mazahirharoon@gmail.com";
 		$toadmin1 = "mazahirharoon@gmail.com";
 		$from = "mazahirharoon@gmail.com";
@@ -354,7 +356,7 @@
 							<h2>CONTACT US</h2>
 						</div>
 					</div>
-					<form id="contactform">
+					<form id="contactform" method = "post"  action = " <?php echo $_SERVER["PHP_SELF"] ;?> ">>
 					<div class="col-sm-12">
 						<div class="col-md-6 col-sm-6">
 							<div class="row">
