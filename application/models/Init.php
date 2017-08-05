@@ -45,7 +45,7 @@ class Init extends CI_Model {
 		$admin_subject = 'Confirmation Mail (GK Printers)';
 		$admin_body = ("<strong>Dear Sir,</strong>,");
 		$admin_body.= "<br>";
-		$admin_body.= ("You have one new query!");
+		$admin_body.= ("You have one new Query!");
 		$admin_body.= "<br>";
 		$admin_body = ("<strong>Name: </strong>".$cname);
 		$admin_body.= "<br>";
