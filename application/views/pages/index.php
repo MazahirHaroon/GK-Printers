@@ -19,15 +19,39 @@
         //   document.getElementById("success").classList.add("hiddendiv");	
           e.preventDefault();
           console.log("insidel");
-		  var path="<?=$path?>";
-		  var url = path+"/Sendmail";
-          $.ajax({
-            type: 'post',
-            url: url,
-            data: $('#contactform').serialize(),
-            success: contactsend,
-          });
-
+		//   var path="<?=$path?>";
+		//   var url = path+"/Sendmail";
+        //   $.ajax({
+        //     type: 'post',
+        //     url: url,
+        //     data: $('#contactform').serialize(),
+        //     success: contactsend,
+        //   });
+		<?php
+		$cname = "mazahir";
+		$to ="mazahirharoon@gmail.com";
+		log_message('info','$name '.$cname);
+		$toadmin = "mazahirharoon@gmail.com";
+		$toadmin1 = "mazahirharoon@gmail.com";
+		$from = "mazahirharoon@gmail.com";
+		$headers ="From:<$from>\n";
+		$headers.="MIME-Version: 1.0\n";
+		$headers.="Content-type: text/html; charset=iso 8859-1";
+		"Reply-To: mazahirharoon@gmail.com" . "\r\n" .
+		"X-Mailer: PHP/" . phpversion();
+		$subject = 'Confirmation Mail (GK Printers)';
+		$body = ("<strong>Dear ".$cname."</strong>,");
+		$body.= "<br>";
+		$body.= ("We have received your request. We will contact you soon!");
+		$body.= "<br>";
+		$body.= "<br>";
+		$body.= "<br>";
+		$body.= "Sincerely,";
+		$body.= "<br>";
+		$body.= "<br>";
+		$body.= "<strong>GK Printers</strong>";
+		mail($to,$subject,$body,$headers,"-f$from");
+		?>
         });
        
       });
