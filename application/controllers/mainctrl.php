@@ -21,39 +21,15 @@ class Mainctrl extends CI_Controller {
 	public function index()
 	{	
 		$data = $this->Init->initPath ('/mainctrl');
-		$this->load->view('pages/index', $data);
+		$this->load->view('pages/home', $data);
 	}
-	public function Sendmail() {
+	public function sendmail() {
 	 	$this->load->model('Init');
-		//$cname =  $this->input->post('cname');
-		//$to =  $this->input->post('cemail');
-		//$events =  $this->input->post('events');
-		//$comments =  $this->input->post('comments');
-		$cname = "mazahir";
-		$to ="mazahirharoon@gmail.com";
+		$cname =  $this->input->post('cname');
+		$to =  $this->input->post('cemail');
+		$events =  $this->input->post('events');
+		$comments =  $this->input->post('comments');
 		log_message('info','$name '.$cname);
-		$toadmin = "mazahirharoon@gmail.com";
-		$toadmin1 = "mazahirharoon@gmail.com";
-		$from = "mazahirharoon@gmail.com";
-		$headers ="From:<$from>\n";
-		$headers.="MIME-Version: 1.0\n";
-		$headers.="Content-type: text/html; charset=iso 8859-1";
-		"Reply-To: mazahirharoon@gmail.com" . "\r\n" .
-		"X-Mailer: PHP/" . phpversion();
-		$subject = 'Confirmation Mail (GK Printers)';
-		$body = ("<strong>Dear ".$cname."</strong>,");
-		$body.= "<br>";
-		$body.= ("We have received your request. We will contact you soon!");
-		$body.= "<br>";
-		$body.= "<br>";
-		$body.= "<br>";
-		$body.= "Sincerely,";
-		$body.= "<br>";
-		$body.= "<br>";
-		$body.= "<strong>GK Printers</strong>";
-		mail($to,$subject,$body,$headers,"-f$from");
-
-		// mail($toadmin,$subjectadmin,$bodyadmin,$headersadmin,"-f$from");
-		// mail($toadmin1,$subjectadmin,$bodyadmin,$headers,"-f$from");
+		$userData = $this->Init->Sendmail($cname, $to, $events, $comments);
 	}
 }

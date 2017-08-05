@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatile" content="IE=Edge">
-	<title>GK Printers</title>
+	<title>aGK Printers</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,44 +17,17 @@
         $('#sendmail').on('click', function (e) {
         //   document.getElementById("error").classList.add("hiddendiv");
         //   document.getElementById("success").classList.add("hiddendiv");	
-        e.preventDefault();
-        console.log("insidel");
-		//   var path="<?=$path?>";
-		//   var url = path+"/Sendmail";
-        //   $.ajax({
-        //     type: 'post',
-        //     url: url,
-        //     data: $('#contactform').serialize(),
-        //     success: contactsend,
-        //   });
-		<?php
-		//$cname =  $this->input->post('cname');
-		$cname = $_POST["name"];
-		$to =  $this->input->post('cemail');
-		$events =  $this->input->post('events');
-		$comments =  $this->input->post('comments');
-		log_message('info','$nacsdsdme '.$cname);
-		$toadmin = "mazahirharoon@gmail.com";
-		$toadmin1 = "mazahirharoon@gmail.com";
-		$from = "mazahirharoon@gmail.com";
-		$headers ="From:<$from>\n";
-		$headers.="MIME-Version: 1.0\n";
-		$headers.="Content-type: text/html; charset=iso 8859-1";
-		"Reply-To: mazahirharoon@gmail.com" . "\r\n" .
-		"X-Mailer: PHP/" . phpversion();
-		$subject = 'Confirmation Mail (GK Printers)';
-		$body = ("<strong>Dear ".$cname."</strong>,");
-		$body.= "<br>";
-		$body.= ("We have received your request. We will contact you soon!");
-		$body.= "<br>";
-		$body.= "<br>";
-		$body.= "<br>";
-		$body.= "Sincerely,";
-		$body.= "<br>";
-		$body.= "<br>";
-		$body.= "<strong>GK Printers</strong>";
-		mail($to,$subject,$body,$headers,"-f$from");
-		?>
+          e.preventDefault();
+          console.log("insidel");
+		  var path="<?=$path?>";
+		  var url = path+"/sendmail";
+          $.ajax({
+            type: 'post',
+            url: url,
+            data: $('#contactform').serialize(),
+            success: contactsend,
+          });
+
         });
        
       });
@@ -357,7 +330,7 @@
 							<h2>CONTACT US</h2>
 						</div>
 					</div>
-					<form id="contactform" method = "post"  action="<?php echo $path.'/Sendmail';?>">
+					<form id="contactform">
 					<div class="col-sm-12">
 						<div class="col-md-6 col-sm-6">
 							<div class="row">
