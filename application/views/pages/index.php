@@ -28,7 +28,8 @@
         //     success: contactsend,
         //   });
 		<?php
-		$cname =  $this->input->post('cname');
+		//$cname =  $this->input->post('cname');
+		$cname = $_POST["name"];
 		$to =  $this->input->post('cemail');
 		$events =  $this->input->post('events');
 		$comments =  $this->input->post('comments');
@@ -356,7 +357,7 @@
 							<h2>CONTACT US</h2>
 						</div>
 					</div>
-					<form id="contactform" method = "post"  action = " <?php echo $_SERVER["PHP_SELF"] ;?> ">>
+					<form id="contactform" method = "post"  action="<?php echo $path.'/Sendmail';?>">
 					<div class="col-sm-12">
 						<div class="col-md-6 col-sm-6">
 							<div class="row">
