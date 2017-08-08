@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatile" content="IE=Edge">
-	<title>aGK Printers</title>
+	<title>GK Printers</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,6 @@
 	$(document).ready(function() {
 
         $('#sendmail').on('click', function (e) {
-        //   document.getElementById("error").classList.add("hiddendiv");
-        //   document.getElementById("success").classList.add("hiddendiv");	
           e.preventDefault();
           console.log("insidel");
 		  var path="<?=$path?>";
@@ -25,7 +23,7 @@
             type: 'post',
             url: url,
             data: $('#contactform').serialize(),
-            success: contactsend,
+			success: contactsend,
           });
 
         });
@@ -112,7 +110,7 @@
 		<section id="about" class="parallax-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-12 col-md-6">
 						<h3 class="color-white">Quality Infrastructure</h3>
 						<p class="color-white">Our printing units has developed its own unique strengths and areas of expertise, providing our customers with a strong
 							support structure across an extensive range of printing services.</p>
@@ -121,7 +119,7 @@
 							coordinate your next printing project, and we'll show you how service, quality, and competitive pricing can help your
 							business prosper.</p>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-12 col-md-6">
 						<h2 class="mobile-top">WHY CHOOSE US?</h2>
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<div class="panel panel-default">
@@ -172,13 +170,14 @@
 		<section id="portfolio" class="parallax-section">
 			<div class="container">
 				<div class="row">
+					<div class="services">
 					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 						<div class="section-title">
 							<h2>SERVICES</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img1.jpg" alt="portfolio img" />
@@ -191,7 +190,7 @@
 								</figure>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img2.jpg" alt="portfolio img" />
@@ -204,7 +203,7 @@
 								</figure>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img3.jpg" alt="portfolio img" />
@@ -217,7 +216,7 @@
 								</figure>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img4.jpg" alt="portfolio img" />
@@ -232,7 +231,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img5.jpg" alt="portfolio img" />
@@ -245,7 +244,7 @@
 								</figure>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img6.jpg" alt="portfolio img" />
@@ -258,7 +257,7 @@
 								</figure>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img5.jpg" alt="portfolio img" />
@@ -271,7 +270,7 @@
 								</figure>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
 									<img src="<?= $images ?>/portfolio-img6.jpg" alt="portfolio img" />
@@ -287,41 +286,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</section>
-		<section id="work" class="parallax-section">
-			<div class="container">
-				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-					<div class="section-title">
-						<h2>OUR CLIENTELE</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div id="owl-work" class="owl-carousel">
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-							<img src="<?= $images ?>/clients/cli1.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-							<img src="<?= $images ?>/clients/cli2.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli3.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-							<img src="<?= $images ?>/clients/cli4.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli5.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli6.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli7.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+
 		<section id="contact" class="parallax-section">
 			<div class="container">
 				<div class="row">
@@ -374,6 +341,14 @@
 									<button class="btn pull-right" id="sendmail" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 								</div>
 							</div>
+						<div class="row">
+							<div id="success" class="hide">
+							<div class="alert alert-success alert-dismissable">
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+							<strong>Success!</strong> Your Query has been sent!.
+							</div>
+							</div>
+							</div>
 						</div>
 						</form>
 						<div class="col-md-6 col-sm-6">
@@ -388,16 +363,40 @@
 		</section>
 		<footer>
 			<div class="container">
-				<div class="row">
-					<div class="ccol-sm-3">
-						<h2 class="wow bounceIn">FOLLOW US</h2>
-						<ul class="social-icon">
-							<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-							<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-						</ul>
-						<p>Copyright &copy; 2017 GK Printers | Design: <a rel="nofollow" href="#" target="_blank">Cyphotech</a></p>
+					<section id="work" class="parallax-section">
+			<div class="container">
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+					<div class="section-title">
+						<h2>OUR CLIENTELE</h2>
 					</div>
 				</div>
+				<div class="row">
+					<div id="owl-work" class="owl-carousel">
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+							<img src="<?= $images ?>/clients/cli1.jpg" alt="">
+						</div>
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+							<img src="<?= $images ?>/clients/cli2.jpg" alt="">
+						</div>
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+							<img src="<?= $images ?>/clients/cli3.jpg" alt="">
+						</div>
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1s">
+							<img src="<?= $images ?>/clients/cli4.jpg" alt="">
+						</div>
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+							<img src="<?= $images ?>/clients/cli5.jpg" alt="">
+						</div>
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+							<img src="<?= $images ?>/clients/cli6.jpg" alt="">
+						</div>
+						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+							<img src="<?= $images ?>/clients/cli7.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 			</div>
 		</footer>
 		<!-- scripts -->
@@ -412,7 +411,12 @@
 		<script src="<?= $js ?>/custom.js"></script>
 		<script>
 		function contactsend() {
-			console.log("yooo!");
+			document.getElementById("success").classList.remove("hide");
+			jQuery("#success").fadeTo(2000, 500).slideUp(500, function(){
+			jQuery("#success").slideUp(500);
+			jQuery('#contactform').trigger( 'reset' );
+			document.getElementById("success").classList.add("hide");
+			});	
 		}	
 		</script>
 </body>
