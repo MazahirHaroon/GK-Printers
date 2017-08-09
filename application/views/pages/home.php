@@ -363,40 +363,31 @@
 		</section>
 		<footer>
 			<div class="container">
-					<section id="work" class="parallax-section">
-			<div class="container">
-				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-					<div class="section-title">
-						<h2>OUR CLIENTELE</h2>
-					</div>
-				</div>
 				<div class="row">
-					<div id="owl-work" class="owl-carousel">
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-							<img src="<?= $images ?>/clients/cli1.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-							<img src="<?= $images ?>/clients/cli2.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli3.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-							<img src="<?= $images ?>/clients/cli4.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli5.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli6.jpg" alt="">
-						</div>
-						<div class="item col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-							<img src="<?= $images ?>/clients/cli7.jpg" alt="">
-						</div>
+					<div class="clientlogo">
+					<div class="col-md-4">
+					<div class="row">
+									<div class="col-md-3 col-sm-6">
+									<img id="clientlogo" src="<?= $images ?>/clients/cli1.jpg" alt="Client img1" />
+									</div>
+									<img id="clientlogo" src="<?= $images ?>/clients/cli2.jpg" alt="Client img2" />
+									<div class="col-md-3 col-sm-6">
+									<img src="<?= $images ?>/clients/cli3.jpg" alt="Client img3" />
+									</div>
+									<div id="clientlogo" class="col-md-3 col-sm-6">
+									<img src="<?= $images ?>/clients/cli4.jpg" alt="Client img4" />
+									</div>
+					
+					</div>
+					</div>
+					</div>		
+					<div class="col-md-4">
+							2
+					</div>
+					<div class="col-md-4">
+							3
 					</div>
 				</div>
-			</div>
-		</section>
 			</div>
 		</footer>
 		<!-- scripts -->
