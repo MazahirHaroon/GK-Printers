@@ -180,7 +180,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img1.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img1.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Brochures</h2>
 										<p class="icon-links">
@@ -193,7 +193,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img2.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img2.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Danglers</h2>
 										<p class="icon-links">
@@ -206,7 +206,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img3.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img3.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Catalogs</h2>
 										<p class="icon-links">
@@ -219,7 +219,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img4.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img4.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Streamers</h2>
 										<p class="icon-links">
@@ -234,7 +234,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img5.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img5.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Business Cards</h2>
 										<p class="icon-links">
@@ -247,7 +247,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img6.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img6.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Letterheads</h2>
 										<p class="icon-links">
@@ -260,7 +260,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img5.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img5.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Envelopes</h2>
 										<p class="icon-links">
@@ -273,7 +273,7 @@
 						<div class="col-md-3">
 							<div class="grid">
 								<figure class="effect-zoe">
-									<img src="<?= $images ?>/portfolio-img6.jpg" alt="portfolio img" />
+									<img id="services" src="<?= $images ?>/portfolio-img6.jpg" alt="portfolio img" />
 									<figcaption>
 										<h2>Books</h2>
 										<p class="icon-links">
@@ -364,28 +364,36 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="clientlogo">
 					<div class="col-md-4">
-					<div class="row">
-									<div class="col-md-3 col-sm-6">
-									<img id="clientlogo" src="<?= $images ?>/clients/cli1.jpg" alt="Client img1" />
-									</div>
-									<img id="clientlogo" src="<?= $images ?>/clients/cli2.jpg" alt="Client img2" />
-									<div class="col-md-3 col-sm-6">
-									<img src="<?= $images ?>/clients/cli3.jpg" alt="Client img3" />
-									</div>
-									<div id="clientlogo" class="col-md-3 col-sm-6">
-									<img src="<?= $images ?>/clients/cli4.jpg" alt="Client img4" />
-									</div>
-					
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<img id="clientlogo" src="<?= $images ?>/clients/cli1.jpg" alt="Client img1" />
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<img id="clientlogo" src="<?= $images ?>/clients/cli2.jpg" alt="Client img2" />
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<img  id="clientlogo"src="<?= $images ?>/clients/cli3.jpg" alt="Client img3" />
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<img id="clientlogo" src="<?= $images ?>/clients/cli4.jpg" alt="Client img4" />
+							</div>
+						</div>
 					</div>
-					</div>
-					</div>		
+				</div>		
+				<div class="row">
 					<div class="col-md-4">
-							2
-					</div>
-					<div class="col-md-4">
-							3
+						<div class="row">
+							<div class="col-md-offset-1 col-md-3 col-sm-6">
+								<img id="clientlogo" src="<?= $images ?>/clients/cli5.jpg" alt="Client img1" />
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<img id="clientlogo" src="<?= $images ?>/clients/cli6.jpg" alt="Client img2" />
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<img  id="clientlogo"src="<?= $images ?>/clients/cli7.jpg" alt="Client img3" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
